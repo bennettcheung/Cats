@@ -83,8 +83,11 @@
     
     Photo* photo = self.photoArray[indexPath.item];
     
-    UIImage *image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:photo.url]]];
-    cell.imageView.image = image;
+    //only load image if it is not loaded
+    if (!photo.image)
+        photo.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:photo.url]]];
+    
+    cell.imageView.image = photo.image;
     cell.titleLabel.text = photo.title;
     
     return cell;
