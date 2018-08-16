@@ -9,6 +9,8 @@
 #import "ViewController.h"
 #import "Photo.h"
 #import "PhotoCollectionViewCell.h"
+#import "DetailViewController.h"
+
 
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UICollectionView *photoCollectionView;
@@ -58,6 +60,8 @@
             NSLog(@"title: %@", newPhoto.title);
             newPhoto.url = [NSString stringWithFormat:@"https://farm%@.staticflickr.com/%@/%@_%@.jpg", item[@"farm"], item[@"server"], item[@"id"], item[@"secret"]];
             NSLog(@"url: %@", newPhoto.url);
+            
+            newPhoto.photoID = item[@"id"];
             [self.photoArray addObject:newPhoto];
         }
         
@@ -93,10 +97,24 @@
     return cell;
 }
 
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    if ([segue.identifier isEqualToString:@"segueShowDetail"]){
+        
+        DetailViewController *controller = segue.destinationViewController;
+        NSIndexPath* path = [self.photoCollectionView indexPathsForSelectedItems][0];
+        controller.photo = self.photoArray[path.item];
+    }
+    
+    
+}
+
 - (NSInteger)collectionView:(nonnull UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
     return [self.photoArray count];
 }
 
+- (IBAction)showInBrowser:(UIButton *)sender {
+    
+}
 
 
 @end

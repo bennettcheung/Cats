@@ -17,6 +17,7 @@
 		9145C3A2212607A500840512 /* CatsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9145C3A1212607A500840512 /* CatsUITests.m */; };
 		9145C3B12126089400840512 /* Photo.m in Sources */ = {isa = PBXBuildFile; fileRef = 9145C3B02126089400840512 /* Photo.m */; };
 		9145C3B421260D6800840512 /* PhotoCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9145C3B321260D6800840512 /* PhotoCollectionViewCell.m */; };
+		9145C3B7212619FD00840512 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9145C3B6212619FD00840512 /* DetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,8 @@
 		9145C3B02126089400840512 /* Photo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Photo.m; sourceTree = "<group>"; };
 		9145C3B221260D6800840512 /* PhotoCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhotoCollectionViewCell.h; sourceTree = "<group>"; };
 		9145C3B321260D6800840512 /* PhotoCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotoCollectionViewCell.m; sourceTree = "<group>"; };
+		9145C3B5212619FD00840512 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		9145C3B6212619FD00840512 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +114,8 @@
 				9145C37E212607A500840512 /* AppDelegate.m */,
 				9145C380212607A500840512 /* ViewController.h */,
 				9145C381212607A500840512 /* ViewController.m */,
+				9145C3B5212619FD00840512 /* DetailViewController.h */,
+				9145C3B6212619FD00840512 /* DetailViewController.m */,
 				9145C3B221260D6800840512 /* PhotoCollectionViewCell.h */,
 				9145C3B321260D6800840512 /* PhotoCollectionViewCell.m */,
 				9145C3AF2126089400840512 /* Photo.h */,
@@ -277,6 +282,7 @@
 				9145C38D212607A500840512 /* main.m in Sources */,
 				9145C3B421260D6800840512 /* PhotoCollectionViewCell.m in Sources */,
 				9145C37F212607A500840512 /* AppDelegate.m in Sources */,
+				9145C3B7212619FD00840512 /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
