@@ -15,6 +15,8 @@
 		9145C38D212607A500840512 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9145C38C212607A500840512 /* main.m */; };
 		9145C397212607A500840512 /* CatsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9145C396212607A500840512 /* CatsTests.m */; };
 		9145C3A2212607A500840512 /* CatsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9145C3A1212607A500840512 /* CatsUITests.m */; };
+		9145C3B12126089400840512 /* Photo.m in Sources */ = {isa = PBXBuildFile; fileRef = 9145C3B02126089400840512 /* Photo.m */; };
+		9145C3B421260D6800840512 /* PhotoCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9145C3B321260D6800840512 /* PhotoCollectionViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		9145C39D212607A500840512 /* CatsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CatsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9145C3A1212607A500840512 /* CatsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CatsUITests.m; sourceTree = "<group>"; };
 		9145C3A3212607A500840512 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9145C3AF2126089400840512 /* Photo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Photo.h; sourceTree = "<group>"; };
+		9145C3B02126089400840512 /* Photo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Photo.m; sourceTree = "<group>"; };
+		9145C3B221260D6800840512 /* PhotoCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhotoCollectionViewCell.h; sourceTree = "<group>"; };
+		9145C3B321260D6800840512 /* PhotoCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotoCollectionViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +111,10 @@
 				9145C37E212607A500840512 /* AppDelegate.m */,
 				9145C380212607A500840512 /* ViewController.h */,
 				9145C381212607A500840512 /* ViewController.m */,
+				9145C3B221260D6800840512 /* PhotoCollectionViewCell.h */,
+				9145C3B321260D6800840512 /* PhotoCollectionViewCell.m */,
+				9145C3AF2126089400840512 /* Photo.h */,
+				9145C3B02126089400840512 /* Photo.m */,
 				9145C383212607A500840512 /* Main.storyboard */,
 				9145C386212607A500840512 /* Assets.xcassets */,
 				9145C388212607A500840512 /* LaunchScreen.storyboard */,
@@ -262,8 +272,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9145C3B12126089400840512 /* Photo.m in Sources */,
 				9145C382212607A500840512 /* ViewController.m in Sources */,
 				9145C38D212607A500840512 /* main.m in Sources */,
+				9145C3B421260D6800840512 /* PhotoCollectionViewCell.m in Sources */,
 				9145C37F212607A500840512 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
